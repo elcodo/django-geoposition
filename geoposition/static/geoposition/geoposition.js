@@ -138,6 +138,7 @@ if (jQuery != undefined) {
             markerOptions = $.extend({}, markerDefaults, markerCustomOptions, {
                 'map': map
             });
+            window.map = map;
 
             if (!(latitude === null && longitude === null && markerOptions['position'])) {
                 markerOptions['position'] = mapLatLng;
